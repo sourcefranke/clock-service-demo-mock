@@ -1,0 +1,16 @@
+{
+  "name": "clock-service-demo-mock",
+  "version": "1.0.0",
+  "description": "A mock server using Prism for demo purposes",
+  "scripts": {
+    "deploy": "prism mock https://sourcefranke.github.io/clock-service-demo-api/swagger/api.yaml --port $PORT --host 0.0.0.0",
+    "local": "prism mock https://sourcefranke.github.io/clock-service-demo-api/swagger/api.yaml --port 8080"
+  },
+  "dependencies": {
+    "@stoplight/prism-cli": "^5.10.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "license": "MIT"
+}
